@@ -1,0 +1,11 @@
+<h1>Welcome to Lewagon Bar</h1>
+<ol>
+  <% @cocktails.each do |cocktail| %>
+    <li>
+<%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+</li>
+  <% end %>
+</ol>
+
+
+
